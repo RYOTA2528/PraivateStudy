@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>セレクターの練習</title>
+  <style>
+    body{
+      background-color: #ccc;
+    }
+
+    #hello{
+      color: blue;
+    }
+
+    .completd{
+      /* 文章に訂正線を入れる */
+      text-decoration: line-through;
+    }
+
+    .red{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>セレクターの練習</h1>
+  <!-- id要素は同じ名前は一か所しか指定できないので注意 -->
+  <p id="hello">こんにちは中村さん</p>
+  <!-- ul liでリストの作成 -->
+  <ul>
+    <li><input type="checkbox">読書</li>
+    <!-- classを指定することで複数で同じスタイルにできる -->
+    <li class="completd"><input type="checkbox">HTMLの学習</li>
+    <!-- classは複数指定することも可能 -->
+    <li class="completd red"><input type="checkbox">Javascriptの学習</li>
+  </ul>
+</body>
+</html>
